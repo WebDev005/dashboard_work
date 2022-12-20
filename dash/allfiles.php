@@ -1,9 +1,9 @@
-<!-- hello testing git -->
+<!-- hello  git testing git -->
 <?php
 session_start();
 include 'dbconnection.php';
 include 'function/function.php';
-if (isset( $_SESSION["clientemail"]))
+if (isset( $_SESSION["clientemail"]))//database client 
 {
 	$typeofuser = checktypeofuser($_SESSION["clientemail"]);
 	  if($typeofuser!='admin' && $typeofuser!='user')
@@ -17,6 +17,7 @@ if (!$conn)
 {
     echo "error occur";
 }
+//  hello  git testing git -->
 else
 {
          mysqli_select_db($conn,$dbname);
